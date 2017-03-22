@@ -30,7 +30,7 @@ public class AccountTest {
 		double num4=input4.nextDouble();
 		System.out.printf("subtracting %f from account2 balance\n",num4);
 		if(num2>0){
-			account1.debit(num4);
+			account2.debit(num4);
 		}
 		else{
 			System.out.printf("Debit amount exceeded account balance\n");
