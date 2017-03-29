@@ -13,7 +13,7 @@ public class SavingsAccount extends Account{
 	
 	@Override
 	public void debit(double money){
-		if(month>10){
+		if(month>=12){
 			super.debit(money);
 		}
 		else{
@@ -23,7 +23,7 @@ public class SavingsAccount extends Account{
 	
 	@Override
 	public double getWithdrawableAccount(){
-		if(month<10){
+		if(month<12){
 			return 0.0;
 		}else{
 			return getBalance();
