@@ -19,7 +19,7 @@ public class AccountTest {
 			System.out.println("Enter deposit amount for Account2: ");
 			double amount2=scan.nextDouble();
 			account2.debit(amount2);
-			System.out.println("Account1 balance: $"+account2.getBalance());
+			System.out.println("Account2 balance: $"+account2.getBalance());
 			
 		}catch(InputMismatchException e){
 			System.out.println("예외발생 : 숫자를 입력하세요\n"+e.toString());
